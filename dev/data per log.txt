@@ -1,0 +1,31 @@
+DATA_NAME-------[USABLE]--------[NOTES]
+$gameStart	[ALL]		Calculated as the difference between the time on the message containing "PKT_StartGame" and the date of the log.
+(000033.511|  791612.0032kb|      4.0000kb added| ALWAYS| PKT_StartGame)
+
+$gameLength	[ALL]		Calculated as the difference between $gameStart and the time on the message "End game message processed!".
+(000033.511|  791612.0032kb|      4.0000kb added| ALWAYS| PKT_StartGame)
+(000696.764| 1242480.0000kb|      0.0000kb added| ALWAYS| End game message processed!)
+
+$gameID		[ALL]		Taken from the message "Receiving PKT_World_SendGameNumber, GameID: 0000000027b23cdb, PlatformID: NA1".
+(000001.636|   91092.0000kb|     20.0000kb added| ALWAYS| Receiving PKT_World_SendGameNumber, GameID: 000000005d4e0770, PlatformID: EUW1)
+
+$gamePlatform	[ALL]		Taken from the message "Receiving PKT_World_SendGameNumber, GameID: 0000000027b23cdb, PlatformID: NA1".
+(000001.636|   91092.0000kb|     20.0000kb added| ALWAYS| Receiving PKT_World_SendGameNumber, GameID: 000000005d4e0770, PlatformID: EUW1)
+
+$gameMode 	[>= 02/20/2014]	Taken from the message "... Processing GameMode Mutator = CLASSIC.".
+(000002.831|   92240.0000kb|      0.0000kb added| ALWAYS| ... Processing GameMode Mutator = CLASSIC.)
+
+$gamemapID 	[< 04/03/2014]	Taken from the message "Adding level zip file: Map1.zip".
+(000004.069|  231824.0000kb|      0.0000kb added| ALWAYS| Adding level zip file: Map1.zip)
+
+$deathData: $killedBy [ALL]	Taken from the message "The Killer was: Porophilic".
+(000582.369| 1235488.0000kb|      0.0000kb added| ALWAYS| The Killer was: Veigar Bot)
+
+$summonerData: $championName, $skinID, $summonerName [< 02/01/2013]
+(000113.525|  779116.0032kb|      0.0000kb added| ALWAYS| Hero Ashe(0) created for Slayer VA)
+
+$summonerData: $championName, $skinID, $summonerName, $teamID, $clientID, $entityType [>= 02/01/2013]
+(000024.438|  698656.0000kb|    384.0000kb added| ALWAYS| Spawning champion (Aatrox) with skinID 0 on team 200 for clientID 1 and summonername (Mark H) (is HUMAN PLAYER))
+
+$gameResult	[>= 08/01/2013]	Taken from the message "{"messageType":"riot__game_client__connection_info","message_body":"Game exited","exit_code":"EXITCODE_LOSE"}".
+(000701.615|  681560.0000kb|      0.0000kb added| ALWAYS| {"messageType":"riot__game_client__connection_info","message_body":"Game exited","exit_code":"EXITCODE_WIN"})

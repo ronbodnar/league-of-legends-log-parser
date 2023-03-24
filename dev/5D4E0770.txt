@@ -1,0 +1,41 @@
+GameID = 5D4E0770
+
+GAME LENGTH
+-----------
+((logStart2 + secondsElapsed2) - (logStart1 + secondsElapsed1)) + logEnd2
+
+logStart1 = 2014-07-09T20:04:09.179
+secondsElapsed1 = 120.316
+
+logStart2 = 2014-07-09T20:18:02.346
+secondsElapsed2 = 33.511
+
+logStart1 = 2014-07-09T20:04:09.179 + 120.316
+logStart1 = 2014-07-09T20:06:09.495
+
+logStart2 = 2014-07-09T20:18:02.346 + 33.511
+logStart2 = 2014-07-09T20:18:35.857
+
+differ = logStart2 - logStart1
+differ = 746.362(12:26.362)
+
+logEnd2 = 696.764(11:36.764)
+
+gameLength = difference + logEnd2
+gameLength = 746.362 + 696.764
+gameLength = 1443.126(24:03.126)
+
+GAME END
+--------
+(logStart2 - logStart1) + logEnd2
+
+logStart2 = 2014-07-09T20:18:02.346
+logStart1 = 2014-07-09T20:04:09.179
+logEnd2 = 696.764(11:36.764)
+
+catchup = logStart2 - logStart1
+catchup = 833.167(13:53.167)
+
+gameEnd = catchup + logEnd2
+gameEnd = 833.167 + 696.764
+gameEnd = 1529.931(25:29.931)

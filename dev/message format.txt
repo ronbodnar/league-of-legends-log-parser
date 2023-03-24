@@ -1,0 +1,37 @@
+001323.352| 1013236.0968kb|      0.0000kb added| ALWAYS| End game message processed!
+001328.759|  551144.0000kb| -177604.0000kb added| ALWAYS| Finished Play game
+
+######.###|$.####kb|$.####kb added|CODE|MESSAGE
+
+# = static digits. They will always be digits, 0-9.
+$ = dynamic characters. They can be spaces or digits.
+CODE = "ALWAYS", "OKAY", "ERROR", "WARN"
+MESSAGE = Anything
+
+PART 1 (######.###)
+-------------------
+Displays the amount of seconds and milliseconds to the thousandth decimal that have passed since creation of the log.
+This part will always be 10 characters long. The empty spaced is filled by 0's.
+This part will always be ascending.
+
+PART 2 ($.####kb)
+-------------------------
+Displays the total amount of data that has been sent or received since creation of the log. (Unconfirmed)
+This part will always be 15 characters long. The value will always have a decimal to the ten thousandth decimal with the string "kb" at the end of the part.
+This part will fluctuate between ascending and descending as there is not always a positive amount of data being transferred.
+
+PART 3 ($.####kb added)
+-------------------------------
+Displays the amount of data that is being sent or received for the current message.
+This part's length depends on the type of value. Positive values are 20 characters long, whereas negative values are 21 characters long. Both messages have the string "kb added" at the end of the part.
+This part does not have descending or ascending values as they are only the size of data that is being transferred.
+
+PART 4 (CODE)
+---------------
+Displays the type of message for the current message. These values can only be "ALWAYS", "OKAY", "ERROR", "WARN".
+This part will always be 7 characters long. The empty space is filled before the code type by spaces.
+
+PART 5 (MESSAGE)
+------------------
+Any possible message generated for the log.
+This part's length has no limit. It is at least 2 characters, with a space preceding the message contents.

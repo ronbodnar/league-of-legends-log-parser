@@ -1,0 +1,254 @@
+Sun Jan 13 20:09:19 2013
+netUID: 0
+0	Slayer VA
+-1	Nunu Bot
+-1	Master Yi Bot
+
+Sun Jan 13 20:26:11 2013
+netUID: 0
+0	Slayer VA
+-1	Sivir Bot
+-1	Master Yi Bot
+-1	Soraka Bot
+-1	Shen Bot
+------------------------
+-1	Annie Bot
+-1	Malphite Bot
+-1	Nasus Bot
+-1	Master Yi Bot
+-1	Sivir Bot
+
+Sun Jan 13 20:36:03 2013
+netUID: 0
+0	Slayer VA
+-1	Sivir Bot
+-1	Master Yi Bot
+-1	Soraka Bot
+-1	Shen Bot
+------------------------
+-1	Annie Bot
+-1	Malphite Bot
+-1	Nasus Bot
+-1	Master Yi Bot
+-1	Sivir Bot
+
+Sun Jan 13 21:18:41 2013
+netUID: 0
+0	Slayer VA
+-1	Sivir Bot
+-1	Master Yi Bot
+-1	Soraka Bot
+-1	Shen Bot
+------------------------
+-1	Annie Bot
+-1	Malphite Bot
+-1	Nasus Bot
+-1	Master Yi Bot
+-1	Sivir Bot
+
+Sun Jan 13 22:03:51 2013
+netUID: 0
+0	Slayer VA
+-1	Sivir Bot
+-1	Master Yi Bot
+-1	Soraka Bot
+-1	Shen Bot
+------------------------
+-1	Annie Bot
+-1	Malphite Bot
+-1	Nasus Bot
+-1	Master Yi Bot
+-1	Sivir Bot
+
+Mon Jan 14 16:54:30 2013
+netUID: 0
+0	Slayer VA
+-1	Sivir Bot
+-1	Master Yi Bot
+-1	Soraka Bot
+-1	Shen Bot
+------------------------
+-1	Annie Bot
+-1	Malphite Bot
+-1	Nasus Bot
+-1	Master Yi Bot
+-1	Sivir Bot
+
+Mon Jan 14 17:37:35 2013
+netUID: 4
+0	toouz
+1	HedlesHrsman
+2	Soulkeeperend
+3	Stark the Archer
+4	Slayer VA
+------------------------
+-1	Miss Fortune Bot
+-1	Nunu Bot
+-1	Annie Bot
+-1	Ashe Bot
+-1	Renekton Bot
+
+Mon Jan 14 19:29:58 2013
+netUID: 3
+0	Slayer VA
+1	RJM97
+2	Sentinial
+3	Ras1n
+4	janicechoi
+------------------------
+-1	Ashe Bot
+-1	Nunu Bot
+-1	Annie Bot
+-1	Sona Bot
+-1	Renekton Bot
+
+Mon Jan 14 20:25:01 2013
+netUID: 2
+0	Ras1n
+1	Slayer VA
+2	BestplayerTW
+3	OGreatBeardedOne
+4	Ulrika
+------------------------
+-1	Ashe Bot
+-1	Warwick Bot
+-1	Annie Bot
+-1	Sona Bot
+-1	Cho'Gath Bot
+
+Tue Jan 15 19:30:14 2013
+netUID: 4
+0	Username0002
+1	Iceblazie
+2	FableSable
+3	Bakednub
+4	ShadowofKings
+------------------------
+-1	Ashe
+-1	Nunu
+-1	Annie
+-1	Lux
+-1	Chogath
+
+Tue Jan 15 19:37:56 2013
+netUID: 3
+0	Slayer VA
+1	hahehihohu97
+2	smellytoe
+3	Username0002
+4	Dactylus
+------------------------
+-1	Miss Fortune Bot
+-1	Nunu Bot
+-1	Annie Bot
+-1	Taric Bot
+-1	Leona Bot
+
+Tue Jan 15 20:30:30 2013
+netUID: 1
+0	ExcuseMeee
+1	WangGers
+2	Slayer VA
+3	Milbs
+4	Username0002
+------------------------
+-1	Ashe Bot
+-1	Trundle Bot
+-1	Annie Bot
+-1	Sona Bot
+-1	Cho'Gath Bot
+
+Tue Jan 15 21:11:26 2013
+netUID: 0
+0	xDerbikx
+1	JayZ536
+2	Username0002
+3	TheFirstSteve
+4	Slayer VA
+------------------------
+-1	Ashe Bot
+-1	Warwick Bot
+-1	Annie Bot
+-1	Taric Bot
+-1	Leona Bot
+
+Wed Jan 16 17:59:45 2013
+netUID: 3
+0	flucx
+1	Username0002
+2	xXligaman507Xx
+3	Slayer VA
+4	Cuchulaain
+------------------------
+-1	Ashe Bot
+-1	Warwick Bot
+-1	Ryze Bot
+-1	Taric Bot
+-1	Cho'Gath Bot
+
+Wed Jan 16 18:04:23 2013
+netUID: 3
+0	Slayer VA
+1	flucx
+2	Username0002
+3	xXligaman507Xx
+4	Cuchulaain
+------------------------
+-1	Ashe
+-1	Warwick
+-1	Ryze
+-1	Taric
+-1	Chogath
+
+Wed Jan 16 18:46:15 2013
+netUID: 1
+0	Slayer VA
+1	Bakednub
+2	Username0002
+3	Unbistruble
+4	l0l Joker l0l
+------------------------
+-1	Ashe Bot
+-1	Warwick Bot
+-1	Ryze Bot
+-1	Annie Bot
+-1	Cho'Gath Bot
+
+Wed Jan 16 19:29:29 2013
+netUID: 2
+0	CrushedCan1
+1	Slayer VA
+2	Daydar
+3	Funkadelic Pagan
+4	Bakednub
+------------------------
+-1	Ashe Bot
+-1	Trundle Bot
+-1	Annie Bot
+-1	Taric Bot
+-1	Renekton Bot
+
+Sun Apr 07 22:05:54 2013
+netUID: 8
+(Listed in log)
+2	Nickrumbolt	Chogath(31)	Blue
+3	TheAbadah	Nunu(20)	Blue
+8	Slayer VA	Varus(110)	Blue
+9	Username2002	Amumu(32)	Blue
+6	Forever2012	Lux(99)		Blue
+1	boonie842	Renekton(58)	Purple
+4	Brocklydude	Leona(89)	Purple
+7	Browland	Lux(99)		Purple
+5	joelOO7		DrMundo(36)	Purple
+0	Killah1091	Katarina(55)	Purple
+(Sorted by clientID)
+0	Killah1091	Katarina(55)	Purple
+1	boonie842	Renekton(58)	Purple
+2	Nickrumbolt	Chogath(31)	Blue
+3	TheAbadah	Nunu(20)	Blue
+4	Brocklydude	Leona(89)	Purple
+5	joelOO7		DrMundo(36)	Purple
+6	Forever2012	Lux(99)		Blue
+7	Browland	Lux(99)		Purple
+8	Slayer VA	Varus(110)	Blue
+9	Username2002	Amumu(32)	Blue

@@ -1,0 +1,122 @@
+- Number of games STARTED:
+	- The total amount of logs the user has in the Game - R3d Logs directory. A log is made when a game is started. Each game has a unique game id that can be used to see how many unique games the user has started. These may include any type of game such as custom (regardless of participants). It is possible to ignore games that have the exit code "EXITCODE_ABANDON" as they are generated when a game is exited. There is no way as of yet to tell whether the game abandoned was pvp or not.
+(000003.374|  106344.0000kb|      0.0000kb added| ALWAYS| Receiving PKT_World_SendGameNumber, GameID: 0000000056205b7d, PlatformID: NA1)
+
+- The start time of the game:
+	- The name of the log displays the time and date in which the log was created. A log is created when the user enters the loading screen for a game. The time of spawns for teams is also indicated in the log.
+(000042.357|  611196.0032kb|      8.0000kb added| ALWAYS| PKT_StartGame)
+
+- Length of game:
+	- The log only displays the amount of seconds passed since creation of the log for every action that is executed. You can determine the length of the game by finding the difference of PKT_StartGame and End game message processed. In this	example, 704 seconds and 42 seconds are the end and start times of the games, respectively. Length of game is 662 seconds (11 minutes, 2 seconds). [(endTime - startTime) / 60, (endTime - startTime) % 60]
+(000042.357|  611196.0032kb|      8.0000kb added| ALWAYS| PKT_StartGame)
+(000704.590|  817192.0000kb|      0.0000kb added| ALWAYS| End game message processed!)
+
+- Current version:
+	- The log contains the current build version for the server.
+	(000000.617|   57796.0000kb|     76.0000kb added| ALWAYS| Build Version: Version 4.11.0.397 (Jul  1 2014/16:32:30) [PUBLIC] <Releases/4.11> ChangeList: 616976)
+
+- Game type:
+	- The log includes the type of game being played.
+	(000004.763|  106588.0000kb|    244.0000kb added| ALWAYS| Initializing GameModeComponents for mode=CLASSIC.
+	000004.763|  106588.0000kb|      0.0000kb added| ALWAYS| ... Processing GameMode Mutator = CLASSIC.)
+
+- Strictly pvp or versus AI:
+	- The log has information for every champion that includes if they are played by a human or are AI.
+	(Spawning champion (Morgana) with skinID 0 on team 100 for clientID 6 and summonername (Mark H) (is HUMAN PLAYER)
+	Spawning champion (Graves) with skinID 0 on team 200 for clientID -1 and summonername (Graves Bot) (is BOT AI)
+
+- The side which the user played on:
+	- The log shows what side the user played on. 100 being blue and 200 being purple.
+	(Spawning champion (Morgana) with skinID 0 on team 100)
+
+- Champions that are in the game:
+	- The log displays all of the champions in the game.
+	(Spawning champion (LeeSin) with skinID 1 on team 100 for clientID 7 and summonername (CMF Aeterna) (is 	HUMAN PLAYER)
+
+- The skin a player has equipped:
+	- You can tell if a champion is equipped with a skin from the log. If skinID is 0, they are using no skin, but any other value and the champion has a skin.
+	(Spawning champion (Morgana) with skinID 0)
+	(Spawning champion (Tristana) with skinID 5)
+
+- Amount of deaths:
+	- Each death of the user is logged along with the killer and damage applied to the user. Simply count the 	number of times the message shows up.
+	(The Killer was: Receptorz)
+
+- Outcome of the game:
+	- The log displays what outcome message to show the user; win or loss. (EXITCODE_LOSE, EXITCODE_WIN, EXITCODE_ABANDON)({"messageType":"riot__game_client__connection_info","message_body":"Gameexited","exit_code":"EXITCODE_LOSE"}
+
+- Abandoned games:
+	- Games the user abandoned will NOT include the message "End game message processed!". If a user is the only human entity in the game, the game will end when abandoned.
+	If a user reconnects to the game the following log will include the message "{"messageType":"riot__game_client__connection_info","message_body":"Reconnect Broadcasted"}" and the gameID will match the previous log's gameID.
+
+	To obtain the current ingame time for the reconnected log, use the formula:
+	(PKT_StartGameTime + newLogDate) - originalGameStart)
+	PKT_StartGameTime = The amount of seconds for the line that contains the message "PKT_StartGame".
+	newLogDate = The date of the reconnected log.
+	originalGameStart = The date for the time the game started in the primary game log.
+
+	EXAMPLE:
+	startTime = 2014-07-07T23:30:41
+	newLogDate = 2014-07-07T23:35:41
+	endTime = 500 seconds (8 minutes, 20 seconds)
+	(23:35:41 + 0:08:20) = 23:44:01 (date the game ended)
+	23:44:01 - 23:30:41 = 13:20 (game length)
+
+	All necessary data from duplicate logs:
+	- logDate
+	- deaths[]
+	- endTime
+	- endResult
+
+OTHER IDEAS
+------------
+Lifetime W/L
+Lifetime W/L per User (CMF Aeterna/Pop Some Molly/Smurfin thot)
+Lifetime deaths
+PVP W/L
+Co-op vs. AI W/L (Also includes custom games with bots. No true way to tell the difference yet)
+
+Total time ingame (All valid games lengths added up)
+Average time per game(totalIngameTime / validGames)
+Average time per day (totalIngameTime / daysPlayed)
+Shortest game (Shortest valid ingame time)
+Longest game (Longest valid ingame time)
+
+W/L for blue side
+W/L for purple side
+Total amount of games using a skin
+Total amount of games without using a skin
+Longest winning streak
+Longest losing streak
+Last 5 games
+Last 10 games
+
+Wins by champion
+Losses by champion
+Deaths by champion
+Average deaths (totalDeaths / totalGames)
+Most killed by
+
+Link to match history (http://matchhistory.na.leagueoflegends.com/en/#match-details/REGION/hexToDecimal(gameId))
+Champion the user played (netUID matches the clientID of the user. ffffffff if the user was a spectator)
+Executions (000098.915|  866432.0000kb|      0.0000kb added| ALWAYS| The Killer was: Tower)
+
+Format expiration/conversion dates. (Date of the log with the first sign of change):
+02/01/2013: More champion data logged. (Hero Vayne(0) created for Slayer VA -> Spawning champion (Varus) with skinID 0 on team 200 for clientID 0 and summonername (Juboi) (is HUMAN PLAYER))
+04/30/2013: Logging started message change. File title format conversion. (2013-04-29_21-49-33_r3dlog -> 2013-04-30T19-10-39_r3dlog)
+08/01/2013: Exitcodes are logged, showing the outcome of the game. ({"messageType":"riot__game_client__connection_info","message_body":"Game exited","exit_code":"EXITCODE_LOSE"})
+02/11/2014: Game modes are now logged. (            000004.677|   83704.0000kb|     16.0000kb added| ALWAYS| Initializing GameModeComponents for mode=CLASSIC.)
+02/20/2014: Game mutators are now logged. (            000006.359|   83736.0000kb|      4.0000kb added| ALWAYS| ... Processing GameMode Mutator = 6v6.)
+04/03/2014: Map id expiration. (Adding level zip file: Map1.zip)
+
+/*
+ * Uncategorized
+ */
+allow users to see stats from:
+first_log_date to specified_date(june 2013)
+|OR|
+specified_date(march 2014) to last_log_date
+
+TIME FORMATS:
+Sun Jan 13 20:36:03 2013
+2014-04-23T21:49:10.244

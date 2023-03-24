@@ -1,0 +1,25 @@
+Lifetime W/L (All valid wins/losses)
+PVP W/L (Valid games that do not include AI)
+Co-op vs. AI W/L (Valid games that do include AI)
+W:L Ratio (totalWins / validGames)
+
+Lifetime deaths/executions (All deaths and executions in valid games)
+Deaths per game (totalDeaths / totalGames)
+
+Total time ingame (All valid games lengths added up)
+Average time per game(totalIngameTime / validGames)
+Average time per day (totalIngameTime / daysPlayed)
+Shortest game (Shortest valid ingame time)
+Longest game (Longest valid ingame time)
+
+W/L for blue side (Wins/Losses for games the user played on side 100[blue])
+W/L for purple side (Wins/Losses for games the user played on side 200[purple])
+Total amount of games using a skin (Valid games with skinID > 0)
+Total amount of games without using a skin (Valid games with skinID = 0)
+Longest winning streak (Valid wins in a row counted up. If loss, counter reset to 0. Highest amount is the longest winning streak)
+Longest losing streak (Valid losses in a row counted up. If win, counter reset to 0. Highest amount is the longest losing streak)
+
+Wins by champion (Valid games won with a certain champion)
+Losses by champion (Valid games lost with a certain champion)
+Deaths by champion (Total amount of deaths in valid games by champion)
+Most killed by (Champion the user has the most deaths by)
